@@ -1,0 +1,19 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "São Luís",
+			"country": {
+				"code": "BR",
+				"name": "Brazil"
+			},
+			"subdivision": {
+				"code": "MA",
+				"name": "Maranhão"
+			},
+			"timezone": "America/Fortaleza",
+			"latitude": -2.5278,
+			"longitude": -44.3049
+		},
+		"timestamp": 1772078222469
+	}
+}

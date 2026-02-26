@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Japaratinga Lounge Resort - Premium All Inclusive</title>
+    <meta name="description"
+        content="Descubra o paraíso em formato All Inclusive Premium. Frente para as piscinas naturais de Japaratinga.">
+
+    <!-- FONTS: Cormorant Garamond e Jost -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GSAP e Lenis (CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+    <!-- Lenis via unpkg CDN -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+
+    <!-- Icones Phosphor -->
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+
+    <!-- SplitType para quebrar texto (alternativa gratuita ao SplitText do Club GSAP) -->
+    <script src="https://unpkg.com/split-type" defer></script>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR: The Invisible Horizon -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-logo">
+                <a href="#">Japaratinga</a>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="#conceito" class="navbar-link">O Conceito</a></li>
+                <li><a href="#estrutura" class="navbar-link">A Experiência</a></li>
+                <li><a href="#gastronomia" class="navbar-link">Gastronomia</a></li>
+            </ul>
+            <div class="navbar-cta">
+                <a href="#reservas" class="btn btn-outline">Reservar</a>
+                <div class="navbar-mobile-toggle">
+                    <i class="ph ph-list"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU OVERLAY (Adicionar depois) -->
+
+    <main>
+        <!-- HERO SECTION: The Esmerald Gateway -->
+        <section class="hero" id="home">
+            <div class="hero-bg">
+                <!-- Imagem via Netlify CDN (substituir hero.jpg depois caso tenha outra) -->
+                <img src="/.netlify/images?url=/images/hero.jpg&w=1920&q=80"
+                    alt="Vista aérea das águas esmeraldas do Japaratinga Resort" loading="eager">
+            </div>
+
+            <div class="hero-content">
+                <!-- Headline elegante, animado depois no script.js -->
+                <h1 class="hero-headline" id="hero-title">
+                    O Paraíso em Formato All Inclusive Premium.
+                </h1>
+                <p class="hero-subheadline">
+                    De frente para as piscinas naturais de Japaratinga, descubra o único resort do Brasil com um padrão
+                    inexplorado de excelência, gastronomia e conforto absoluto, de frente pro mar.
+                </p>
+                <div class="hero-cta">
+                    <a href="#reservas" class="btn">Quero Viver Esta Experiência</a>
+                </div>
+            </div>
+
+            <div class="hero-cursor-area"></div>
+            <div class="custom-cursor" id="custom-cursor">
+                <span>Descubra</span>
+            </div>
+        </section>
+
+        <!-- Outras seções serão inseridas aqui -->
+
+
+        <!-- C. SEÇÃO: O NOVO CONCEITO -->
+        <section class="section conceito bg-surface" id="conceito">
+            <div class="container">
+                <div class="conceito-grid">
+                    <div class="conceito-content">
+                        <h2 class="conceito-title">Una Nova Categoria de<br><i>Liberdade</i><span class="text-micro">All
+                                Inclusive Premium</span></h2>
+                        <p class="conceito-text">Esqueça as pulseiras coloridas e a disputa por espreguiçadeiras. No
+                            Japaratinga Lounge Resort, o All Inclusive Premium redefine a hospitalidade no Brasil. Aqui,
+                            a exclusividade e a fartura caminham juntas. Bebidas premium, menus assinados por chefs
+                            renomados e petiscos extraordinários estão à sua disposição, 24 horas por dia, sem limites.
+                        </p>
+                        <p class="conceito-text">Você não está apenas em um resort; você está no controle absoluto das
+                            suas escolhas em meio a um cenário caribenho de mar esmeralda e barreiras de corais. O
+                            verdadeiro luxo é não precisar se preocupar com nada.</p>
+                    </div>
+                    <div class="conceito-media parallax-wrap">
+                        <img src="/.netlify/images?url=/images/drink.jpg&w=1000&q=80" alt="Bebidas premium no bar"
+                            class="parallax-img" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- D. SEÇÃO: ESTRUTURA & EXPANSÃO -->
+        <section class="section estrutura bg-sand" id="estrutura">
+            <div class="container">
+                <div class="estrutura-header">
+                    <h2 class="estrutura-title">Majestoso por Natureza.<br>Grandioso por Design.</h2>
+                    <div class="estrutura-text-cols">
+                        <p>Uma estrutura monumental desenhada para abraçar o descanso e a curtição. Das acomodações
+                            modernas, banhadas pela luz natural do litoral alagoano, até o nosso imponente Spa com
+                            terapias de profundo relaxamento.</p>
+                        <p>E agora, com uma expansão arquitetônica surpreendente, o paraíso ganhou proporções ainda
+                            maiores. Cada metro quadrado foi esculpido para proporcionar uma imersão completa, onde o
+                            conforto contemporâneo se encontra com a brisa do oceano. É a fusão perfeita entre a
+                            preservação ambiental e a infraestrutura de altíssimo nível.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-wall">
+                    <div class="gallery-track">
+                        <div class="gallery-item item-main tilt-element">
+                            <div class="gallery-img-wrap"><img src="/.netlify/images?url=/images/hotel.jpg&w=1200&q=80"
+                                    alt="Estrutura principal do hotel" loading="lazy"></div>
+                        </div>
+                        <div class="gallery-item item-sub1 tilt-element">
+                            <div class="gallery-img-wrap"><img src="/.netlify/images?url=/images/spa.jpg&w=800&q=80"
+                                    alt="Spa e relaxamento" loading="lazy"></div>
+                        </div>
+                        <div class="gallery-item item-sub2 tilt-element">
+                            <div class="gallery-img-wrap"><img src="/.netlify/images?url=/images/beach.jpg&w=800&q=80"
+                                    alt="Praia paradisíaca" loading="lazy"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- E. SEÇÃO: GASTRONOMIA (Horizontal Cinematic Scroll) -->
+        <section class="section gastronomia bg-emerald" id="gastronomia">
+            <div class="gastro-sticky-wrap">
+                <div class="container gastro-container">
+                    <div class="gastro-content">
+                        <h2 class="gastro-title">Sabores do Brasil<br>e do Mundo</h2>
+                        <p class="gastro-text">A nossa gastronomia é um espetáculo à parte, disponível 24 horas por dia.
+                            Nossa imensa variedade de pratos e ilhas gastronômicas oferece uma viagem sensorial que
+                            mescla as maravilhas da culinária regional com clássicos internacionais.</p>
+                        <p class="gastro-text">Tudo isso preparado com paixão e habilidade técnica incomparável por
+                            nossos renomados chefs. Dos petiscos à beira da piscina até os jantares sofisticados, cada
+                            refeição é uma celebração ao paladar.</p>
+                    </div>
+
+                    <div class="gastro-slider-wrapper">
+                        <div class="gastro-slider">
+                            <!-- Slides de gastronomia -->
+                            <div class="gastro-slide"><img src="/.netlify/images?url=/images/food.jpg&w=800&q=80"
+                                    alt="Prato refinado" loading="lazy"></div>
+                            <div class="gastro-slide"><img src="/.netlify/images?url=/images/drink.jpg&w=800&q=80"
+                                    alt="Bebidas premium" loading="lazy"></div>
+                            <div class="gastro-slide"><img src="/.netlify/images?url=/images/hotel.jpg&w=800&q=80"
+                                    alt="Ambiente do restaurante" loading="lazy"></div>
+                            <div class="gastro-slide"><img src="/.netlify/images?url=/images/hero.jpg&w=800&q=80"
+                                    alt="Vista gastronômica" loading="lazy"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- F. SEÇÃO: PROMOÇÕES IRRESISTÍVEIS -->
+    <section class="section promocoes bg-surface" id="reservas">
+        <div class="promocoes-bg">
+            <img src="/.netlify/images?url=/images/beach.jpg&w=1200&q=30" alt="" loading="lazy">
+        </div>
+        <div class="container-narrow">
+            <div class="promocoes-card surface-float">
+                <h2 class="promocoes-title">O Seu Momento de Pausa Tem Data Marcada</h2>
+                <p class="promocoes-text">Seja para recarregar as energias em março, mergulhar na calma da Semana Santa
+                    ou estender o calor do verão até abril. Nossas tarifas foram pensadas para que a sua única
+                    preocupação seja decidir qual drink pedir a seguir.</p>
+                <p class="promocoes-text">Garanta o melhor preço com antecedência e carimbe o seu passaporte para o mar
+                    verde esmeralda de Japaratinga. Onde a sua próxima história inesquecível vai acontecer?</p>
+                <div class="magnetic-wrap pt-4">
+                    <a href="#" class="btn btn-magnetic">Ver Datas Disponíveis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- G. SEÇÃO: DEPOIMENTOS -->
+    <section class="section depoimentos bg-sand" id="depoimentos">
+        <div class="container-narrow text-center">
+            <div class="depoimentos-frame">
+                <div class="quote-mark">"</div>
+                <div class="depoimento-slides">
+                    <div class="depoimento-slide active">
+                        <p class="depoimento-text">A sensação de pedir qualquer prato, a qualquer hora, com um sabor
+                            espetacular, é indescritível. O mar de Japaratinga é lindo, mas a estrutura do resort fez
+                            com que a gente não quisesse sair de lá pra nada. Ansiosa para voltar.</p>
+                        <p class="depoimento-author text-micro">— Marina R.</p>
+                    </div>
+                    <div class="depoimento-slide">
+                        <p class="depoimento-text">Já estive em resorts de alto padrão fora do país e o Japaratinga não
+                            deve absolutamente nada. Muito pelo contrário! As bebidas premium no bar da piscina enquanto
+                            o sol se põe... E a ala da expansão ficou simplesmente um sonho real.</p>
+                        <p class="depoimento-author text-micro">— Thiago C.</p>
+                    </div>
+                </div>
+                <div class="depoimento-controls pt-2">
+                    <button class="dep-btn dep-prev" aria-label="Anterior"><i class="ph ph-arrow-left"></i></button>
+                    <button class="dep-btn dep-next" aria-label="Próximo"><i class="ph ph-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- H. SEÇÃO: FAQ -->
+    <section class="section faq bg-surface" id="faq">
+        <div class="container container-faq">
+            <div class="faq-grid">
+                <div class="faq-header-col">
+                    <h2 class="faq-title">Dúvidas Frequentes</h2>
+                </div>
+                <div class="faq-content-col">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                O que exatamente está incluso no All Inclusive Premium?
+                                <span class="accordion-icon"><i class="ph ph-plus"></i></span>
+                            </button>
+                            <div class="accordion-body">
+                                <div class="accordion-inner">
+                                    Absolutamente todas as suas refeições, lanches, petiscos e bebidas, tanto alcoólicas
+                                    quanto não alcoólicas, durante toda a sua estadia, 24 horas por dia. Todos os menus
+                                    são assinados por chefs renomados e as bebidas incluem selos nobres internacionais.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                O resort fica de frente para o mar?
+                                <span class="accordion-icon"><i class="ph ph-plus"></i></span>
+                            </button>
+                            <div class="accordion-body">
+                                <div class="accordion-inner">
+                                    Sim. Nossa imensa estrutura beija a areia da Praia de Japaratinga, oferecendo acesso
+                                    privilegiado às águas mornas, calmas e cristalinas da Costa dos Corais, que fica
+                                    logo na vizinhança de Maragogi.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                As piscinas naturais são acessíveis a partir do resort?
+                                <span class="accordion-icon"><i class="ph ph-plus"></i></span>
+                            </button>
+                            <div class="accordion-body">
+                                <div class="accordion-inner">
+                                    A região de Japaratinga é famosa pelas belíssimas piscinas naturais que se formam na
+                                    maré baixa. Trata-se de um fenômeno deslumbrante que acontece bem em frente à nossa
+                                    extensão de praia paradisíaca. Descobrir a barreira de corais é uma experiência
+                                    inesquecível.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- I. FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">Japaratinga</a>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navegação</h4>
+                    <ul class="footer-links">
+                        <li><a href="#conceito">O Conceito</a></li>
+                        <li><a href="#estrutura">A Experiência</a></li>
+                        <li><a href="#gastronomia">Gastronomia</a></li>
+                        <li><a href="#faq">Dúvidas Frequentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Reservas & Contato</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">+55 82 9999-0000</a></li>
+                        <li><a href="#">reservas@japaratingaresort.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Endereço</h4>
+                    <p class="footer-text">Praia de Japaratinga, Rodovia AL-101 Norte, Km 128<br>Costa dos Corais,
+                        Alagoas - Brasil</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Japaratinga Lounge Resort. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
